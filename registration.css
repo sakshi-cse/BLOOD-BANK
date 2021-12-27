@@ -1,0 +1,153 @@
+/* nav styling */
+
+*
+{
+    padding:0px;
+    margin:0px;
+}
+
+body
+{
+    background-color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* navbar styling */
+
+.wrap
+{
+    z-index: -1;
+}
+.navbar
+{
+    margin-bottom: 0px;
+    border-radius: 0px;
+    background-color: rgb(191, 3, 15);
+    color:white !important;
+    border-bottom: 1px solid white !important;
+}
+a
+{
+    color:white !important;
+}
+a:hover
+{
+    color:rgb(248, 6, 6) !important;
+}
+.active
+{
+    background-color: white !important;
+    color:rgb(191, 3, 15) !important;
+    font-size:18px !important;
+}
+.active:hover
+{
+   
+    font-weight:bold !important;
+}
+
+
+
+/* form styling */
+
+.form
+{
+    background-color:  rgb(191, 3, 15);
+   
+   
+    
+   width:40%;
+    color:white;
+    margin:0 auto;
+  
+   
+}
+.form-group
+{
+    margin-top:3%;
+    font-size: 18px;
+    text-align: center;
+}
+.form-control
+{
+    border-radius: 0px;
+    width:80%;
+    margin:0 auto;
+}
+
+.form-head
+{
+    text-shadow: 1px 1px white;
+   
+    font-weight: bold;
+    
+}
+h3
+{
+    font-style: italic;
+}
+
+   legend
+{
+    text-align: center;
+    color:white;
+    font-weight: bold;
+    margin-bottom: 0px;
+    
+}
+fieldset
+{
+    margin-top: 14px;
+}
+
+
+
+@media only screen and (max-width: 1100px) {
+    .form{
+        width:70%;
+    }
+}
+@media only screen and (max-width: 700px) {
+    .form{
+        width:90%;
+    }
+}
+
+/* btn styling */
+
+#btn_div
+{
+    margin-top:2%;
+    margin-right: 2%;
+
+}
+
+#back_btn
+{
+    background-color: rgb(191, 3, 15);
+    color:white;
+
+}
+#back_btn:hover
+{
+    color:rgb(248, 6, 6) !important;
+}
+
+/* submit button */
+
+#sub_btn
+{
+    margin-left:10%;
+    border-radius: 0px;
+    width:80%;
+    margin-top:0px;
+    font-size: 18px;
+    text-shadow: 2px 2px white;
+    text-shadow: 0px 0px white;
+}
+#sub_btn:hover
+{
+    background-color: rgb(248, 6, 6);
+    color:white;
+    
+}
