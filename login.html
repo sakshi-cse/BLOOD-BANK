@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Blood Bank App</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../style/login.css">
+</head>
+<body>
+
+    
+    <div class="loader" id="load"></div>
+
+    <div class="wrap" id="wrapper">
+        <!-- navbar html -->
+
+        <nav class="navbar navbar-inverse">
+                <div class="container-fluid">
+                  <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span> 
+                    </button>
+                    <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-tint"></span> BLOOD BANK</a>
+                  </div>
+                  <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                      <li class="active"><a href="../index.html" class="active">Home</a></li>
+                      <!-- <li><a href="#">Page 1</a></li>
+                      <li><a href="#">Page 2</a></li> 
+                      <li><a href="#">Page 3</a></li>  -->
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                      <li><a href="./signup.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                      <!-- <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li> -->
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+
+              <!-- lower part -->
+
+              <div class="back">
+                  <div class="row">
+                      <div class="col-lg-7 com-md-4 col-sm-12 col-sx-12">
+                        <img src="../blood.jpg"  class="img-responsive" alt="">
+                      </div>
+                      <!-- form html -->
+                      <div class="col-lg-5 col-md-8 col-sm-12 col-xs-12">
+
+                        <div class="form">
+
+                             <center> <div class="h3">  <h3 class="form-head">
+                              "Share a little, care a little – Donate Blood"
+                                </h3>
+                            
+                           
+                        </div>
+                    </center>
+                    <fieldset>
+                        <legend>LOGIN</legend>
+                                <div class="form-group">
+                                        <label for="email">Email address:</label>
+                                        <input type="email" class="form-control" id="email">
+                                      </div>
+                                      <div class="form-group">
+                                        <label for="pwd">Password:</label>
+                                        <input type="password" class="form-control" id="pwd">
+                                      </div>
+                                      <button id="login_btn" class="btn btn-default">Submit</button>
+                        </div>
+                      
+                      </div>
+                    </fieldset>
+                  </div>
+              </div>
+              
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/5.7.0/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyBgztSzSUjNAqJLv3cdkJp7SCsz3Ymh2cs",
+            authDomain: "bloodbank007.firebaseapp.com",
+            databaseURL: "https://bloodbank007.firebaseio.com",
+            projectId: "bloodbank007",
+            storageBucket: "bloodbank007.appspot.com",
+            messagingSenderId: "491252287153"
+        };
+        firebase.initializeApp(config);
+    </script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="../javascript/login.js"></script>
+</body>
+</html>
